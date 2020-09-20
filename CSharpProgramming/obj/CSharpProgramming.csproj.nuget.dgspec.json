@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mgesc\\Desktop\\CSharpProgramming\\CSharpProgramming\\CSharpProgramming.csproj": {}
+    "C:\\Users\\mgesc\\Documents\\GitHub\\BinaryFile-Reader-and-Writer\\CSharpProgramming\\CSharpProgramming.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mgesc\\Desktop\\CSharpProgramming\\CSharpProgramming\\CSharpProgramming.csproj": {
+    "C:\\Users\\mgesc\\Documents\\GitHub\\BinaryFile-Reader-and-Writer\\CSharpProgramming\\CSharpProgramming.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mgesc\\Desktop\\CSharpProgramming\\CSharpProgramming\\CSharpProgramming.csproj",
+        "projectUniqueName": "C:\\Users\\mgesc\\Documents\\GitHub\\BinaryFile-Reader-and-Writer\\CSharpProgramming\\CSharpProgramming.csproj",
         "projectName": "CSharpProgramming",
-        "projectPath": "C:\\Users\\mgesc\\Desktop\\CSharpProgramming\\CSharpProgramming\\CSharpProgramming.csproj",
+        "projectPath": "C:\\Users\\mgesc\\Documents\\GitHub\\BinaryFile-Reader-and-Writer\\CSharpProgramming\\CSharpProgramming.csproj",
         "packagesPath": "C:\\Users\\mgesc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mgesc\\Desktop\\CSharpProgramming\\CSharpProgramming\\obj\\",
+        "outputPath": "C:\\Users\\mgesc\\Documents\\GitHub\\BinaryFile-Reader-and-Writer\\CSharpProgramming\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

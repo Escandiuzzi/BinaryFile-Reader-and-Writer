@@ -24,3 +24,16 @@ C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.dll
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.pdb
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.genruntimeconfig.cache
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.exe
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.deps.json
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.runtimeconfig.json
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.runtimeconfig.dev.json
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.dll
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.pdb
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.csprojAssemblyReference.cache
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.AssemblyInfoInputs.cache
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.AssemblyInfo.cs
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.csproj.CoreCompileInputs.cache
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.dll
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.pdb
+C:\Users\mgesc\Documents\GitHub\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.genruntimeconfig.cache
