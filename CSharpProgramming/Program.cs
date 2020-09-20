@@ -29,7 +29,7 @@ namespace CSharpProgramming
 
                 int.TryParse(line, out record);
 
-                bool valueFound = fileReader.Search(record);
+                bool valueFound = fileReader.Search(line);
             }
         }
     }

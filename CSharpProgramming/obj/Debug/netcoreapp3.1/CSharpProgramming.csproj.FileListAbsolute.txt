@@ -24,3 +24,16 @@ C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.dll
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.pdb
 C:\Users\mgesc\Desktop\CSharpProgramming\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.genruntimeconfig.cache
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.exe
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.deps.json
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.runtimeconfig.json
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.runtimeconfig.dev.json
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.dll
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\bin\Debug\netcoreapp3.1\CSharpProgramming.pdb
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.csprojAssemblyReference.cache
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.AssemblyInfoInputs.cache
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.AssemblyInfo.cs
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.dll
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.pdb
+C:\Users\Leonardo Martelli\source\repos\BinaryFile-Reader-and-Writer\CSharpProgramming\obj\Debug\netcoreapp3.1\CSharpProgramming.genruntimeconfig.cache
