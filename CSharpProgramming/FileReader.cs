@@ -14,22 +14,6 @@ namespace CSharpProgramming
         private static List<byte[]> _lines;
         public bool Search(string record)
         {
-            //using(BinaryReader b = new BinaryReader(File.Open(AssetsPath.OUTPUT_PATH, FileMode.Open)))
-            //{
-            //    bool searching = true;
-            //    if(b.BaseStream.Length != 0)
-            //    {
-            //        int middle = (int)(b.BaseStream.Length / 2) + 1;
-
-            //        var leo = b.BaseStream.Seek(middle, SeekOrigin.Begin);
-
-            //        byte[] by = b.ReadBytes(10);
-
-            //        string a = DecodeData(by);
-            //    }
-            //}
-
-
             _lines = new List<byte[]>();
 
             var rawBuffer = new byte[1024 * 1024];
@@ -56,7 +40,6 @@ namespace CSharpProgramming
                         {
                             var lineLength = linePosition - bytesConsumed;
                             var line = new Span<byte>(rawBuffer, bytesConsumed, lineLength);
-                            var firstCommaPos = line.IndexOf((byte)';');
 
                             _lines.Add(line.ToArray());
                             bytesConsumed += lineLength + 1;
@@ -83,16 +66,18 @@ namespace CSharpProgramming
 
                 var commaPos = span.IndexOf((byte)';');
                 var index = span.Slice(0, commaPos - 1);
-                
-                var comp = DecodeData(index.ToArray()).CompareTo(key);
+
+                var actual = DecodeData(index.ToArray());
+                var comp = actual.CompareTo(key);
+
+                Console.WriteLine($"Chave atual = {actual}, pesquisando = {key}");
 
                 if(comp == 0)
                     return true;
                 else if(comp < 0)
                     return SearchOnLine(key, middle + 1, end);
-
                 else if(comp > 0)
-                    return SearchOnLine(key, start, middle -1);
+                    return SearchOnLine(key, start, middle);
             }
             return false;
         }

@@ -30,23 +30,21 @@ namespace CSharpProgramming
                 reader.Close();
             }
 
-            using(FileStream fileStream = new FileStream(AssetsPath.OUTPUT_PATH, FileMode.Create))
-            using(BinaryWriter binaryWriter = new BinaryWriter(fileStream))
+            using FileStream fileStream = new FileStream(AssetsPath.OUTPUT_PATH, FileMode.Create);
+            using BinaryWriter binaryWriter = new BinaryWriter(fileStream);
+            foreach(var person in people)
             {
-                foreach(var person in people)
-                {
-                    binaryWriter.Write(Encoding.UTF8.GetBytes(person.Index.ToString()).AsSpan());
-                    binaryWriter.Write(SEPARATOR);
-                    binaryWriter.Write(Encoding.UTF8.GetBytes(person.Name).AsSpan());
-                    binaryWriter.Write(SEPARATOR);
-                    binaryWriter.Write(Encoding.UTF8.GetBytes(person.Age.ToString()).AsSpan());
-                    binaryWriter.Write(SEPARATOR);
-                    binaryWriter.Write(Encoding.UTF8.GetBytes(person.Location.ToString()).AsSpan());
-                    binaryWriter.Write("\r\n");
-                }
-
-                binaryWriter.Close();
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Index.ToString()).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Name).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Age.ToString()).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Location.ToString()).AsSpan());
+                binaryWriter.Write("\r\n");
             }
+
+            binaryWriter.Close();
         }
     }
 }
