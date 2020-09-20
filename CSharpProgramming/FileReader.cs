@@ -77,25 +77,22 @@ namespace CSharpProgramming
         {
             if(end - start > 0)
             {
-                var lookingFor = Encoding.UTF8.GetBytes(key).AsSpan();
+                var middle = ((end + start) / 2);
 
-                var middle = ((start + end) / 2) +1;
+                var span = _lines.ElementAt(middle).AsSpan();
 
-                var span = _lines.ElementAt(middle - 1).AsSpan();
-                var dejair = Array.IndexOf(span.ToArray(), (byte)';', 0);
+                var commaPos = span.IndexOf((byte)';');
+                var index = span.Slice(0, commaPos - 1);
+                
+                var comp = DecodeData(index.ToArray()).CompareTo(key);
 
-
-
-                var firstCommaPos = span.IndexOf((byte)';');
-                var movieId = span.Slice(0, firstCommaPos);
-
-                if(movieId.SequenceCompareTo(lookingFor) == 0)
+                if(comp == 0)
                     return true;
-                else if(movieId.SequenceCompareTo(lookingFor) > 0)
-                    return SearchOnLine(key, middle, end);
+                else if(comp < 0)
+                    return SearchOnLine(key, middle + 1, end);
 
-                else if(movieId.SequenceCompareTo(lookingFor) < 0)
-                    return SearchOnLine(key, start, middle);
+                else if(comp > 0)
+                    return SearchOnLine(key, start, middle -1);
             }
             return false;
         }
