@@ -11,7 +11,7 @@ namespace CSharpProgramming
     public class FileReader
     {
 
-        private static List<byte[]> _lines;
+        private static List<Tuple> _lines;
         public bool Search(string record)
         {
             _lines = new List<byte[]>();
