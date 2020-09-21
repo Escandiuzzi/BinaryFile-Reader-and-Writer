@@ -1,18 +1,22 @@
 ﻿using CSharpProgramming.Assets;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace CSharpProgramming
 {
     public class FileWriter
     {
-        public void CreateBinaryFile() 
+        private const string SEPARATOR = "; ";
+
+        public void CreateBinaryFile()
         {
             List<Person> people = new List<Person>();
 
-            using (var reader = new StreamReader(AssetsPath.INPUTS_PATH))
+            using(var reader = new StreamReader(AssetsPath.INPUTS_PATH))
             {
-                while (!reader.EndOfStream)
+                while(!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
 
@@ -26,19 +30,21 @@ namespace CSharpProgramming
                 reader.Close();
             }
 
-            using (FileStream fileStream = new FileStream(AssetsPath.OUTPUT_PATH, FileMode.Create))
-            using (BinaryWriter binaryWriter = new BinaryWriter(fileStream))
+            using FileStream fileStream = new FileStream(AssetsPath.OUTPUT_PATH, FileMode.Create);
+            using BinaryWriter binaryWriter = new BinaryWriter(fileStream);
+            foreach(var person in people)
             {
-                foreach (var person in people)
-                {
-                    binaryWriter.Write(person.Index);
-                    binaryWriter.Write(person.Name);
-                    binaryWriter.Write(person.Age);
-                    binaryWriter.Write(person.Location);
-                }
-
-                binaryWriter.Close();
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Index.ToString()).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Name).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Age.ToString()).AsSpan());
+                binaryWriter.Write(SEPARATOR);
+                binaryWriter.Write(Encoding.UTF8.GetBytes(person.Location.ToString()).AsSpan());
+                binaryWriter.Write("\r\n");
             }
+
+            binaryWriter.Close();
         }
     }
 }

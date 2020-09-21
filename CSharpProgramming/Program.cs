@@ -1,35 +1,35 @@
 ﻿using CSharpProgramming.Assets;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Text;
 
 namespace CSharpProgramming
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            if (!File.Exists(AssetsPath.OUTPUT_PATH)) {
-
+            if(!File.Exists(AssetsPath.OUTPUT_PATH))
+            {
                 FileWriter fileWriter = new FileWriter();
                 fileWriter.CreateBinaryFile();
             }
 
             FileReader fileReader = new FileReader();
 
-            while (true) 
+            while(true)
             {
                 Console.WriteLine("Digite um valor para ser encontrado nos registros\n");
 
                 string line = Console.ReadLine();
 
-                int record = -1;
+                if(int.TryParse(line, out int _))
+                {
+                    bool valueFound = fileReader.Search(line);
 
-                int.TryParse(line, out record);
-
-                bool valueFound = fileReader.Search(record);
+                    Console.WriteLine(valueFound);
+                }
+                else
+                    Console.WriteLine("Digite um valor válido");
             }
         }
     }
